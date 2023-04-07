@@ -16,4 +16,4 @@ RUN npm install --f
 COPY . .
 
 EXPOSE 4888
-RUN npm start
+CMD [ "npm", "start" ]
