@@ -18,3 +18,4 @@ RUN npm start
 COPY . .
 
 EXPOSE 4888
+CMD [ "npm", "start" ]
