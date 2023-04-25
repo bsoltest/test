@@ -17,6 +17,11 @@
       "entryPoint": [],
       "portMappings": [
         {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        },
+        {
           "hostPort": 4888,
           "protocol": "tcp",
           "containerPort": 4888
@@ -58,13 +63,13 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "1024",
+  "memory": "4096",
   "taskRoleArn": "arn:aws:iam::844845216585:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:844845216585:task-definition/task:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:844845216585:task-definition/task:16",
   "family": "task",
   "requiresAttributes": [
     {
@@ -128,8 +133,8 @@
   ],
   "networkMode": "awsvpc",
   "runtimePlatform": null,
-  "cpu": "512",
-  "revision": 1,
+  "cpu": "2048",
+  "revision": 16,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
